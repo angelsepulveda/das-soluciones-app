@@ -9,7 +9,6 @@ import { WithChildren } from '../../_metronic/helpers';
 import BuilderPageWrapper from '../pages/layout-builder/BuilderPageWrapper';
 
 const PrivateRoutes = () => {
-  const AccountPage = lazy(() => import('../modules/accounts/AccountPage'));
   return (
     <Routes>
       <Route element={<MasterLayout />}>
@@ -26,14 +25,7 @@ const PrivateRoutes = () => {
         />
         <Route path="menu-test" element={<MenuTestPage />} />
         {/* Lazy Modules */}
-        <Route
-          path="crafted/account/*"
-          element={
-            <SuspensedView>
-              <AccountPage />
-            </SuspensedView>
-          }
-        />
+
         {/* Page Not Found */}
         <Route path="*" element={<Navigate to="/error/404" />} />
       </Route>

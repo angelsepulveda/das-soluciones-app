@@ -63,17 +63,6 @@ const AsideToolbar = () => {
         {/*end::Wrapper*/}
       </div>
       {/*end::User*/}
-
-      {/*begin::Aside search*/}
-      <div className="aside-search py-5">
-        {/* <?php Theme::getView('partials/search/_inline', array(
-        'class' => 'w-100',
-        'menu-placement' => 'bottom-start',
-        'responsive' => 'false'
-    ))?> */}
-        <Search />
-      </div>
-      {/*end::Aside search*/}
     </>
   );
 };
